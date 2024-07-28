@@ -60,7 +60,7 @@ body{
 }
 
 .presentacion__contenido__texto{
-    font-size: 18px;
+    font-size: 24px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -80,7 +80,7 @@ body{
 .presentacion__enlaces__subtitulo{
     font-family: 'Krona One', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .presentacion__enlaces__link{
@@ -89,7 +89,7 @@ body{
       width: 378px;
       text-align: center;
       border-radius: 8px;
-      font-size: 18px;
+      font-size: 24px;
       font-weight: 600;
       padding: 21.5px 0;
       text-decoration: none;
@@ -116,10 +116,6 @@ footer{
 
 img{
     mask-image: linear-gradient(black 85%, transparent);
-}
-
-.fcovalera {
-    padding: 24px 20px 24px 20px;
 }
 
 @media (max-width: 1200px) {
