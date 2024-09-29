@@ -13,20 +13,66 @@ body{
     color: #F6F6F6;
 }
 
+
+        .word-container {
+            font-size: 1em;
+            font-weight: bold;
+            position: relative;
+            height: 1em;
+            
+        }
+        .word {
+            position: absolute;
+            width: 100%;
+            opacity: 1;
+            animation: fade 6s infinite;
+            color: #22D4FD;
+        }
+        .word:nth-child(1) {
+            animation-delay: 3s;
+        }
+        .word:nth-child(2) {
+            animation-delay: 6s;
+        }
+
+        @keyframes fade {
+            0%, 100% { opacity: 0; }
+            45%, 55% { opacity: 1; }
+        }
+        .fila {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: baseline;
+        }
+        .columna {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;
+            font-size: 24px;
+            font-family: 'Montserrat', sans-serif;
+            color: #22D4FD;
+            text-decoration: none;
+            font-weight: 1000;
+            gap: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #22D4FD;
+        }
+
 .header{
-    padding: 50px 0% 0% 15%;
+    margin-left: 10%;
     background-color: #000000;
     color: #F6F6F6;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
+    
     text-decoration: none;
+    text-align: center;
 }
 
-.header__menu{
-    display: flex;
-    gap: 32px;
-}
+
 
 .header__menu__links{
     font-family: 'Montserrat', sans-serif;
@@ -38,20 +84,22 @@ body{
 
 .titulo-destaque {
     color: #22D4FD; 
+    
 }
 
 .presentacion {
-    margin: 2% 15% 0% 15%;
+    margin: 2% 5% 5% 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .presentacion__contenido{
-    width: 615px;
-    display: flex;
-    flex-direction: column;
+    width: 515px;
+    display: block;
+    flex-direction: center;
     gap: 40px;
+    text-align: center;
 }
 
 .presentacion__contenido__titulo{
@@ -115,11 +163,16 @@ footer{
 }
 
 img{
-    mask-image: linear-gradient(black 85%, transparent);
+    mask-image: linear-gradient(rgb(37, 32, 32) 85%, transparent);
+    
 }
 
 .fcovalera {
-    padding: 24px 20px 24px 20px;
+    mask-image: linear-gradient(rgb(37, 32, 32) 75%, transparent);
+    border-radius: 10%;
+    width: 80%;
+    margin: 10px;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 1200px) {
@@ -128,6 +181,4 @@ img{
         margin: 2% 15% 0% 15%;
     }
 }   
-
-
 

@@ -4,36 +4,44 @@
     <meta charset="UTF-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <title>Portafolio</title>
     <link rel="stylesheet" href="./styles/style.css">
-
+    <style>
+        
+    </style>
 </head>
 <body>
     <header class="header">
-        <nav class="header__menu">   
-            <a class="header__menu__links" href="index.html">Home</a>
-            <a class="header__menu__links" href="about.html">Sobre mí</a>
-            <a class="header__menu__links" href="curri.html">Currículum</a>
+        <nav class="header__menu">  
+            <div class="fila">
+                <div class="columna"><a href="index.html">Home</a></div>
+                <div class="columna"><a href="about.html">Sobre mí</a></div>
+                <div class="columna"><a href="curri.html">Currículum</a></div>
+            </div>
         </nav>
     </header>
     <main class="presentacion">
         <section class="presentacion__contenido">
             <h1 class="presentacion__contenido__titulo">
-                ¡Convierte tu visión digital en  
-                <strong class="titulo-destaque">una experiencia cautivadora!
-                </strong></h1>
-                <p class="presentacion__contenido__texto">¡Saludos! Soy Francisco Valera, artesano del código y mago del Front-end. Transformo ideas en interfaces irresistibles con  HTML y CSS, entre otros. ¿Listo para dar vida a tu proyecto web? <br><br>¡Charlemos!"
-
-                </p>
-                <div class="presentacion__enlaces">
-                    <h2 class="presentacion__enlaces__subtitulo">Accede a mis redes</h2>
-                    <a class="presentacion__enlaces__link" href="https://github.com/fvaleradeveloper/"><img src="./assets/github.png" alt="Icono GitHub">GitHub</a>
-                    <a class="presentacion__enlaces__link" href="www.linkedin.com/in/francisco-valera-439678262"><img src="./assets/linkedin.png" alt="Icono LinkedIn">LinkedIn</a>
-                    <a class="presentacion__enlaces__link" href="https://www.instagram.com/fvalera.developer/"><img src="./assets/instagram.png" alt="Icono Instagram">Instagram</a>
+            ¡Transformando ideas en  
+            <strong class="titulo-destaque">experiencias digitales que  
+                <div class="word-container">
+                    <div class="word">cautivan!</div>
+                    <div class="word">asombran!</div>
                 </div>
-               
+           </strong></h1>
+            <p class="presentacion__contenido__texto" style="text-align: center; margin: 20px; justify-content: center">¡Saludos! <br><br>  Soy Francisco Valera, artesano del código y mago del Front-end. Transformo ideas en interfaces sencillas y con contenido irresistible. <br><br>¿Listo para dar vida a tu proyecto web? <br><br>¡Charlemos!"
+            </p>
+            <div class="presentacion__enlaces" style="margin:20px">
+                <h2 class="presentacion__enlaces__subtitulo">Accede a mis redes</h2>
+                <a class="presentacion__enlaces__link" href="https://github.com/fvaleradeveloper/"><img src="./assets/github.png" alt="Icono GitHub">GitHub</a>
+                <a class="presentacion__enlaces__link" href="www.linkedin.com/in/francisco-valera-439678262"><img src="./assets/linkedin.png" alt="Icono LinkedIn">LinkedIn</a>
+                <a class="presentacion__enlaces__link" href="https://www.instagram.com/fvalera.developer/"><img src="./assets/instagram.png" alt="Icono Instagram">Instagram</a>
+            </div>
         </section>
-        <img class="fcovalera" src="./assets/fvaleradev.png" alt="Foto de Fco Valera desarrolando un proyecto">
+        <img class="fcovalera" src="./assets/fvaleradev.png" alt="Foto de Fco Valera desarrollando un proyecto">
     </main>
     <footer class="footer">
         <p><img src="./assets/116-1167317_copyright-symbol-png-file-creative-commons-logo-transparent_small.png" alt="Copyright">Desarrollado por Francisco Valera 2024</p>
